@@ -366,15 +366,17 @@
             margin-top: 15px;
         }
 
-        .footer-links a {
-            color: var(--white);
+        /* LINE 連結樣式優化 */
+        .line-link {
+            color: #34d399; /* 亮綠色，更顯眼 */
             text-decoration: none;
-            opacity: 0.8;
-            transition: opacity 0.2s;
+            font-weight: 700;
+            transition: color 0.2s ease, text-decoration 0.2s ease;
         }
 
-        .footer-links a:hover {
-            opacity: 1;
+        .line-link:hover {
+            color: #6ee7b7;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -604,7 +606,10 @@
         <p>© 2026 網路中心系列課程. All Rights Reserved.</p>
         <p>如有任何問題，歡迎透過聯絡管道與我們聯絡：</p>
         <div class="footer-links">
-            <span><i class="fa-brands fa-line"></i> LINE ID: <strong>@927nqrih</strong></span>
+            <span>
+                <i class="fa-brands fa-line"></i> LINE ID: 
+                <a href="https://lin.ee/ZrQ9kHa" target="_blank" class="line-link">@927nqrih</a>
+            </span>
         </div>
     </footer>
 
