@@ -10,7 +10,7 @@
     
     <style>
         :root {
-            --primary-color: #164e63; /* 深海綠藍色，呼叫海報色系 */
+            --primary-color: #164e63; /* 深海綠藍色 */
             --secondary-color: #0d9488; /* 亮 teal 色 */
             --accent-color: #0f766e;
             --bg-light: #f0fdfa; /* 淡淡的湖水綠底 */
@@ -228,6 +228,31 @@
             font-weight: bold;
         }
 
+        /* QR Code 整合樣式 */
+        .qr-container {
+            margin-top: 15px;
+            text-align: center;
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px dashed #cbd5e1;
+            max-width: 220px;
+        }
+
+        .qr-image {
+            width: 100%;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .qr-text {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 8px;
+            font-weight: 500;
+        }
+
         /* 講師陣容與照片 */
         .speaker-container {
             display: grid;
@@ -358,7 +383,6 @@
     <!-- Poster Hero Section -->
     <div class="hero-section">
         <div class="hero-container">
-            <!-- 直接載入您提供的精美宣傳海報 -->
             <img src="2026Q3雪人+Sunny網路中心授證課表.jpg" alt="2026 網路中心系列課程 海報" class="hero-poster">
             <div class="hero-text">
                 <h1>2026 網路中心系列課程</h1>
@@ -516,6 +540,13 @@
                             <li><strong>戶名：</strong>李善茹</li>
                             <li><strong>帳號：</strong>0157-0000-0564</li>
                         </ul>
+                        <!-- 新增的雪人國泰世華帳戶 QR Code 區塊 -->
+                        <div class="qr-container">
+                            <img src="雪人國泰世華帳戶.jpg" alt="雪人國泰世華帳戶轉帳 QR Code" class="qr-image">
+                            <div class="qr-text">
+                                <i class="fa-solid fa-qrcode"></i> 掃描 QR Code 快速轉帳
+                            </div>
+                        </div>
                     </div>
 
                 </div>
